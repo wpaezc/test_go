@@ -21,11 +21,15 @@ package main
 // 	//Always need to define a variable
 // }
 
+//Type conversion ON GO
+//	greeting := "Holi mamaw"
+//Transform greeting to an slice of bytes
+//	fmt.Println([]byte(greeting)
+
 func main() {
 	cards := newDeck()
-
-	hand, remainingDeck := deal(cards, 5)
-
-	hand.print()
-	remainingDeck.print()
+	cards.saveToFile("abc.txt")
+	//hand, remainingDeck := deal(cards, 5)
+	//hand.print()
+	//remainingDeck.print()
 }
