@@ -28,7 +28,15 @@ package main
 
 func main() {
 	cards := newDeck()
-	cards.saveToFile("abc.txt")
+
+	cards.shuffe()
+
+	cards.print()
+
+	//cards.saveToFile("abc.txt")
+
+	//newCards := newDeckFromFile("abc.txt")
+	//fmt.Printf(newCards.toString())
 	//hand, remainingDeck := deal(cards, 5)
 	//hand.print()
 	//remainingDeck.print()
